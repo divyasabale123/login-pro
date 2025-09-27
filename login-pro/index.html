@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Divya Sabale</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome Back</h2>
+    <form id="loginForm" class="card">
+      <label>Email <input type="email" id="loginEmail" required placeholder="you@example.com" /></label>
+      <label>Password 
+        <div class="pw-wrap">
+          <input type="password" id="loginPassword" minlength="6" required placeholder="••••••" />
+          <button type="button" id="togglePw">👁</button>
+        </div>
+      </label>
+      <button type="submit" class="btn primary">Login</button>
+      <p>Don’t have an account? <a href="signup.html">Sign up</a></p>
+    </form>
+    <div class="toggle-dark">
+      <label><input type="checkbox" id="darkMode"> Dark Mode</label>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

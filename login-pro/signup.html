@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Signup - Divya Sabale</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Create Account</h2>
+    <form id="signupForm" class="card">
+      <label>Full Name <input type="text" id="name" required /></label>
+      <label>Email <input type="email" id="signupEmail" required /></label>
+      <label>Password 
+        <div class="pw-wrap">
+          <input type="password" id="signupPassword" minlength="6" required />
+          <button type="button" id="togglePw2">👁</button>
+        </div>
+      </label>
+      <div class="strength"><div id="strengthBar"></div></div>
+      <button type="submit" class="btn primary">Sign Up</button>
+      <p>Already have an account? <a href="index.html">Login</a></p>
+    </form>
+    <div class="toggle-dark">
+      <label><input type="checkbox" id="darkMode"> Dark Mode</label>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
